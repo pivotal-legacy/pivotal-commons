@@ -2,3 +2,7 @@ development:
   adapter: postgresql
   database: pivotal_commons_development
 
+test:
+  adapter: postgresql
+  database: pivotal_commons_test
+
