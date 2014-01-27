@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "visiting the homepage" do
-  it "shows an apply link" do
+  it "shows an apply link", driver: :webkit, inaccessible: true do
     path = root_path
     visit path
 

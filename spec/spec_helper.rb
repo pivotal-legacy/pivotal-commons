@@ -17,4 +17,7 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.infer_base_class_for_anonymous_controllers = false
   config.order = "random"
+  config.around(:each, inaccessible: true) do |example|
+    Capybara::Accessible.skip_audit { example.run }
+  end
 end
