@@ -20,3 +20,5 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'capybara-accessible', github: 'Casecommons/capybara-accessible', ref: 'f69c065acb0eba5d942dfc84708b087186a0ac02'
 end
+
+gem 'rails_12factor', group: :production
