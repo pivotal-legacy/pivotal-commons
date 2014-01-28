@@ -2,6 +2,6 @@
 
 Apply for desk space at Pivotal Labs.
 
-## Installation
+## Setup
 
-Set the FORM_URL environment variable to point to Google Apps.
+Move .env.sample to .env and set the appropriate environment variables.
