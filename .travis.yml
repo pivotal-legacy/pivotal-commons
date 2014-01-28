@@ -3,8 +3,9 @@ rvm:
   - 2.0.0
 env:
   - FORM_URL=https://docs.google.com/a/pivotallabs.com/forms/d/1JCs_Di_5zwj-H31y_4_tQR5qHfSaz8SNZhXyZtnLJ5w/viewform
-script:
-  - xvfb-run bundle exec rspec spec/features/**/*.rb
+before_script:
+  - "sh -e /etc/init.d/xvfb start"
+script: "bundle exec rake default"
 notifications:
   email:
     - pivotal-commons-dev@googlegroups.com
