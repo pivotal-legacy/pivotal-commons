@@ -1,0 +1,30 @@
+$left-columns: 1;
+
+dl {
+  @include shift($left-columns);
+}
+
+dl.horizontal {
+  @include shift(0);
+
+  dt {
+    margin: 0;
+    float: left;
+    text-align: right;
+    @include span-columns($left-columns);
+  }
+
+  dd {
+    margin: 0 0 0 $base-line-height;
+    @include shift($left-columns);
+    @include clearfix;
+  }
+}
+
+section > ul {
+  @include shift($left-columns);
+}
+
+dd > ul {
+  @extend %default-ul;
+}
