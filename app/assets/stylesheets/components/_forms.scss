@@ -1,0 +1,4 @@
+.button {
+  @include button;
+  font-size: em(16);
+}
