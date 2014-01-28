@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.0.0
 env:
-  - FORM_URL=https://docs.google.com/a/pivotallabs.com/forms/d/1JCs_Di_5zwj-H31y_4_tQR5qHfSaz8SNZhXyZtnLJ5w/viewform DISPLAY=:99.0
+  - FORM_URL=https://docs.google.com/a/pivotallabs.com/forms/d/1JCs_Di_5zwj-H31y_4_tQR5qHfSaz8SNZhXyZtnLJ5w/viewform DISPLAY=:99.0 AGREEMENT_URL=https://drive.google.com/file/d/0B07AIO2LfHqPc1owcm1QMEZ5TG8/edit?usp=sharing
 before_script:
   - "sh -e /etc/init.d/xvfb start"
 script: "bundle exec rake default"
