@@ -16,6 +16,6 @@ describe "visiting the homepage" do
     expect(page).to have_content "FAQ"
 
     click_on "Apply"
-    expect(page).to have_css "form"
+    expect(page).to have_selector "iframe"
   end
 end
