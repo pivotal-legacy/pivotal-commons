@@ -1,7 +1,10 @@
 .container
-  %section
-    %h2 What's it all about?
-    %dl.horizontal
+  %section.section-header
+    .apply-container
+      = link_to 'Apply', apply_path, class: 'button'
+
+  %section.section-about
+    %dl.split
       %dt Who
       %dd We're #{link_to 'Pivotal Labs', 'http://pivotallabs.com'}. We build software. We've got extra space, and we want to share it with you.
 
@@ -18,10 +21,7 @@
       %dt Why
       %dd We're a part of the tech community in NYC. We want to see you succeed, and we want to learn from your success.
 
-    .apply-container
-      = link_to 'Apply', apply_path, class: 'button'
-
-  %section
+  %section.section-callout
     %h2 Testimonials
 
     %ul
@@ -53,7 +53,7 @@
           be able to offer them a cup of coffee or coconut water. |
           %figcaption #{link_to "Jess Eddy", "https://twitter.com/jesseddy"}, #{link_to "UX consultant", "http://jesseddy.com/"}
 
-  %section
+  %section.section-faq
     %h2 FAQ
 
     %dl

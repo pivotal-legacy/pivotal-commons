@@ -5,3 +5,14 @@
 section {
   @include span-columns(8);
 }
+
+.split {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  height: 350px;
+}
+
+.split dt:first-of-type {
+  margin-top: 0;
+}
