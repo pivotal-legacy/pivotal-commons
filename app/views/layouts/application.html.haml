@@ -7,4 +7,10 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    = yield
+    .container
+      %header
+        %h1
+          = link_to 'Pivotal Commons', root_path
+        %p Desk space at Pivotal Labs NYC&mdash;Season 2
+
+      = yield
