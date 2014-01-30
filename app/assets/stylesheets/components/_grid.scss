@@ -32,3 +32,9 @@ blockquote {
   border: none;
   @include clearfix;
 }
+
+header {
+  @include span-columns(10);
+  padding: $base-line-height;
+  background-color: $header-color;
+}

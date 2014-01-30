@@ -1,8 +1,10 @@
 .apply-container {
-  text-align: center;
-  @include pad(30px);
+  @include pad(0 ($base-line-height * 2) ($base-line-height * 2) ($base-line-height));
+  background-color: $header-color;
 }
 
 .button {
   @extend button;
+  border: 2px solid white;
+  background: transparent;
 }

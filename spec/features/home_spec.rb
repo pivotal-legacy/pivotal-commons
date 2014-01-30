@@ -12,7 +12,7 @@ describe "visiting the homepage" do
     expect(page).to have_content "Where"
     expect(page).to have_content "Why"
 
-    expect(page).to have_content "Testimonials"
+    expect(page).to have_css ".testimonial"
     expect(page).to have_content "FAQ"
 
     click_on "Apply"
