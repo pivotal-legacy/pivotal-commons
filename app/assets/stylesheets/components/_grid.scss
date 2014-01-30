@@ -2,15 +2,23 @@
   @include outer-container;
 }
 
+.container hr {
+  width: 100%;
+}
+
 section {
   @include span-columns(10);
+}
+
+.section-callout {
+  margin: 45px 0;
 }
 
 .split {
   -webkit-columns: 2;
   -moz-columns: 2;
   columns: 2;
-  background-color: #eeeeee;
+  background-color: $light-gray;
   padding: $base-line-height;
   height: $base-section-height;
 }
@@ -36,5 +44,5 @@ blockquote {
 header {
   @include span-columns(10);
   padding: $base-line-height;
-  background-color: $header-color;
+  background-color: $pivotal-red;
 }

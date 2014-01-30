@@ -6,16 +6,16 @@ describe "visiting the homepage" do
 
     expect(page).to have_content "Pivotal Commons"
 
-    expect(page).to have_content "Who"
-    expect(page).to have_content "What"
-    expect(page).to have_content "When"
-    expect(page).to have_content "Where"
-    expect(page).to have_content "Why"
+    expect(page).to have_content "WHO"
+    expect(page).to have_content "WHAT"
+    expect(page).to have_content "WHEN"
+    expect(page).to have_content "WHERE"
+    expect(page).to have_content "WHY"
 
-    expect(page).to have_css ".testimonial"
+    expect(page).to have_selector "blockquote"
     expect(page).to have_content "FAQ"
 
-    click_on "Apply"
+    click_on "Apply Now"
     expect(page).to have_selector "iframe"
   end
 end
