@@ -1,9 +1,5 @@
 $left-columns: 1;
 
-section > ul {
-  @include shift($left-columns);
-}
-
 dd > ul {
   @extend %default-ul;
 }

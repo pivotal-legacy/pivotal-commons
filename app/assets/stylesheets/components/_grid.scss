@@ -3,16 +3,32 @@
 }
 
 section {
-  @include span-columns(8);
+  @include span-columns(10);
 }
 
 .split {
   -webkit-columns: 2;
   -moz-columns: 2;
   columns: 2;
-  height: 350px;
+  background-color: #eeeeee;
+  padding: $base-line-height;
+  height: $base-section-height;
 }
 
 .split dt:first-of-type {
   margin-top: 0;
+}
+
+img {
+  -webkit-border-radius: 56px;
+  -moz-border-radius: 56px;
+  border-radius: 56px;
+  display: inline;
+  float: left;
+  margin-right: $base-line-height;
+}
+
+blockquote {
+  border: none;
+  @include clearfix;
 }

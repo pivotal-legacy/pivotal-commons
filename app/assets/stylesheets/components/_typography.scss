@@ -7,11 +7,15 @@ blockquote {
 }
 
 figcaption {
-  text-align: right;
+  margin-left: $testimonial-image-width + ($base-line-height * 2);
+}
+
+figcaption::before {
+  content: "\2014  ";
 }
 
 .testimonial + li {
-  margin-top: 30px;
+  margin-top: $base-line-height * 2;
 }
 
 h2 {
