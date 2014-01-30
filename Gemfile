@@ -13,6 +13,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'rails_12factor', group: :production
 gem 'unicorn'
+gem 'compass-rails'
 
 group :test, :development do
   gem 'dotenv-rails'

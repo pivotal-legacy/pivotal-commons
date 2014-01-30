@@ -2,9 +2,11 @@
 @import "bourbon";
 @import "bitters/bitters";
 @import "neat";
+@import "compass/css3/columns";
+@import "compass/css3/border-radius";
 
-@import "components/colors";
 @import "components/constants";
+@import "components/colors";
 @import "components/fonts";
 @import "components/typography";
 @import "components/grid";
