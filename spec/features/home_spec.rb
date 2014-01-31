@@ -16,6 +16,19 @@ describe "visiting the homepage" do
     expect(page).to have_content "FAQ"
 
     click_on "Apply Now"
-    expect(page).to have_selector "iframe"
+    expect(page).to have_selector "input[type=text][name=name]"
+    expect(page).to have_selector "input[type=text][name=email]"
+    expect(page).to have_selector "input[type=text][name=organization]"
+    expect(page).to have_selector "input[type=text][name=website]"
+    expect(page).to have_selector "input[type=text][name=number_of_seats]"
+    expect(page).to have_selector "input[type=radio][name=full_time_schedule][value=Yes]"
+    expect(page).to have_selector "input[type=radio][name=full_time_schedule][value=No]"
+    expect(page).to have_selector "input[type=text][name=schedule_other_response]"
+    expect(page).to have_selector "textarea[name=pivotal_reference]"
+    expect(page).to have_selector "textarea[name=pitch]"
+    expect(page).to have_selector "textarea[name=why_valuable]"
+    expect(page).to have_selector "textarea[name=community_contribution]"
+    expect(page).to have_selector "textarea[name=misc]"
+
   end
 end
