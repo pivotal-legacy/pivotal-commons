@@ -10,6 +10,7 @@
   font-weight: normal;
   @include pad(($base-line-height * 0.5) ($base-line-height * 2));
   border: 2px solid white;
+  border-radius: 8px;
   background: transparent;
 }
 
