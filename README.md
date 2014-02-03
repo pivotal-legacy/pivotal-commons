@@ -1,7 +1,7 @@
 # Pivotal Commons
 
 Apply for desk space at Pivotal Labs.
-<commons.pivotallabs.com>
+<http://commons.pivotallabs.com>
 
 ## Deploying
 
